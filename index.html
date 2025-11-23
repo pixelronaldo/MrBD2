@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IAMBDGAMER - Professional Profile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: #202122;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background-color: #3366cc;
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 20px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s;
+        }
+        
+        nav ul li a:hover {
+            opacity: 0.8;
+        }
+        
+        .main-content {
+            display: flex;
+            margin: 30px 0;
+            gap: 30px;
+        }
+        
+        .content {
+            flex: 3;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            padding: 30px;
+        }
+        
+        .sidebar {
+            flex: 1;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        
+        h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #a2a9b1;
+            padding-bottom: 10px;
+        }
+        
+        h2 {
+            font-size: 22px;
+            margin: 25px 0 15px;
+            border-bottom: 1px solid #a2a9b1;
+            padding-bottom: 5px;
+        }
+        
+        h3 {
+            font-size: 18px;
+            margin: 20px 0 10px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+        }
+        
+        .infobox {
+            border: 1px solid #a2a9b1;
+            border-collapse: collapse;
+            background-color: #f8f9fa;
+            color: black;
+            margin: 0.5em 0 0.5em 1em;
+            padding: 0.2em;
+            float: right;
+            clear: right;
+            width: 22em;
+        }
+        
+        .infobox th, .infobox td {
+            vertical-align: top;
+            text-align: left;
+            padding: 8px;
+        }
+        
+        .infobox-header {
+            text-align: center;
+            font-size: 125%;
+            font-weight: bold;
+        }
+        
+        .infobox-image {
+            text-align: center;
+            padding: 10px;
+        }
+        
+        .infobox-image img {
+            width: 150px;
+            height: 150px;
+            background-color: #e6e6e6;
+            display: inline-block;
+            border-radius: 4px;
+        }
+        
+        .infobox-label {
+            font-weight: bold;
+            width: 35%;
+        }
+        
+        .software-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 15px 0;
+        }
+        
+        .software-item {
+            background: #e6e6e6;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .gallery-item {
+            background: #e6e6e6;
+            height: 150px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            color: #666;
+        }
+        
+        footer {
+            background-color: #3366cc;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+            }
+            
+            .infobox {
+                float: none;
+                width: 100%;
+                margin: 0 0 20px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">IAMBDGAMER</div>
+                <nav>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="main-content">
+            <div class="content">
+                <h1>IAMBDGAMER</h1>
+                
+                <table class="infobox">
+                    <tbody>
+                        <tr>
+                            <td colspan="2" class="infobox-header">IAMBDGAMER</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="infobox-image">
+                                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzk5OSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPklNQUdFPC90ZXh0Pjwvc3ZnPg==" alt="IAMBDGAMER Profile Image">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="infobox-label">Real Name</td>
+                            <td>Not Publicly Disclosed</td>
+                        </tr>
+                        <tr>
+                            <td class="infobox-label">Known As</td>
+                            <td>IAMBDGAMER</td>
+                        </tr>
+                        <tr>
+                            <td class="infobox-label">Occupation</td>
+                            <td>Video Editor & Thumbnail Designer</td>
+                        </tr>
+                        <tr>
+                            <td class="infobox-label">Years Active</td>
+                            <td>2023 - Present</td>
+                        </tr>
+                        <tr>
+                            <td class="infobox-label">Experience</td>
+                            <td>1 Year</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p><strong>IAMBDGAMER</strong> is a professional video editor and thumbnail designer specializing in gaming content. With a keen eye for visual storytelling and a passion for gaming culture, IAMBDGAMER creates engaging visual content that captures audience attention and enhances viewer experience.</p>
+                
+                <h2 id="about">About</h2>
+                <p>IAMBDGAMER entered the content creation scene in 2023, quickly establishing a reputation for high-quality video editing and compelling thumbnail designs. While maintaining a degree of anonymity common in the gaming community, IAMBDGAMER's work speaks volumes through its quality and attention to detail.</p>
+                
+                <p>Based in the digital creative space, IAMBDGAMER collaborates with various gaming content creators to produce visuals that stand out in crowded social media feeds and video platforms. His work often features dynamic compositions, vibrant color schemes, and strategic text placement designed to maximize click-through rates.</p>
+                
+                <h2 id="skills">Skills & Software</h2>
+                <p>IAMBDGAMER is proficient in industry-standard creative software, allowing for a comprehensive approach to visual content creation:</p>
+                
+                <h3>Primary Software</h3>
+                <div class="software-list">
+                    <div class="software-item">Adobe After Effects</div>
+                    <div class="software-item">Adobe Premiere Pro</div>
+                    <div class="software-item">Adobe Photoshop</div>
+                </div>
+                
+                <h3>Specializations</h3>
+                <ul>
+                    <li>YouTube Thumbnail Design</li>
+                    <li>Video Editing & Post-Production</li>
+                    <li>Motion Graphics</li>
+                    <li>Color Correction & Grading</li>
+                    <li>Visual Effects</li>
+                    <li>Graphic Design for Social Media</li>
+                </ul>
+                
+                <h2 id="experience">Professional Experience</h2>
+                <p>With one year of professional experience, IAMBDGAMER has developed a distinctive style that combines contemporary design trends with gaming aesthetics. His approach to thumbnail creation focuses on:</p>
+                
+                <ul>
+                    <li>Creating high-contrast visuals that stand out at small sizes</li>
+                    <li>Implementing psychological triggers to encourage clicks</li>
+                    <li>Maintaining brand consistency across a creator's content</li>
+                    <li>Optimizing for various platform specifications</li>
+                </ul>
+                
+                <p>In video editing, IAMBDGAMER specializes in maintaining viewer engagement through strategic pacing, seamless transitions, and appropriate use of visual effects that enhance rather than distract from the content.</p>
+                
+                <h2 id="portfolio">Portfolio & Notable Works</h2>
+                <p>While specific client names remain confidential due to privacy agreements, IAMBDGAMER's portfolio includes work for gaming channels across various genres including FPS, RPG, and strategy games. His thumbnails have contributed to videos achieving view counts ranging from thousands to hundreds of thousands.</p>
+                
+                <div class="gallery">
+                    <div class="gallery-item">Thumbnail Example 1</div>
+                    <div class="gallery-item">Thumbnail Example 2</div>
+                    <div class="gallery-item">Video Edit Sample 1</div>
+                    <div class="gallery-item">Video Edit Sample 2</div>
+                    <div class="gallery-item">Motion Graphics Example</div>
+                    <div class="gallery-item">Color Grading Sample</div>
+                </div>
+                
+                <h2 id="contact">Contact & Collaboration</h2>
+                <p>IAMBDGAMER is available for select collaboration opportunities with gaming content creators. For professional inquiries, please reach out through established gaming community networks or professional creative platforms.</p>
+                
+                <p><em>Note: IAMBDGAMER maintains a selective approach to collaborations to ensure quality output and creative alignment with potential partners.</em></p>
+            </div>
+            
+            <div class="sidebar">
+                <h3>Quick Facts</h3>
+                <ul>
+                    <li>Specializes in gaming content</li>
+                    <li>Fluent in English and Bengali</li>
+                    <li>Preferred game genres: FPS, RPG, Strategy</li>
+                    <li>Average thumbnail creation time: 2-3 hours</li>
+                    <li>Video editing turnaround: 1-3 days depending on length</li>
+                </ul>
+                
+                <h3>Work Philosophy</h3>
+                <p>"Every thumbnail is a gateway to a story, and every edit should serve that narrative."</p>
+                
+                <h3>Did You Know?</h3>
+                <p>IAMBDGAMER originally started creating content as a hobby before transitioning to professional work after positive feedback from the gaming community.</p>
+                
+                <h3>In Popular Culture</h3>
+                <p>While not a mainstream figure, IAMBDGAMER's work has been featured in several gaming community highlight reels and has been praised for its consistent quality and attention to current visual trends.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 IAMBDGAMER Professional Profile. This is a fictional representation for demonstration purposes.</p>
+            <p>All trademarks and registered trademarks are the property of their respective owners.</p>
+        </div>
+    </footer>
+</body>
+</html>
